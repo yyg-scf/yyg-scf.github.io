@@ -1,1 +1,32 @@
-111111111111
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转太极图</title>
+    <style>
+        *{ margin: 0; padding: 0;}
+        .circlebox{ width: 300px; height: 300px; margin: 100px; position: absolute; animation: move 1.5s infinite linear;}
+        .circleblack{ width: 300px; height: 300px; background: black; border-radius: 50%; }
+        .circlewhite{ width: 150px; height: 300px; background: #FFF; border-top-right-radius: 150px; border-bottom-right-radius: 150px; position: absolute; right: 0; top: 0;}
+        .circlebb{ width: 150px; height: 150px; background:black; border-radius: 50%; position: absolute; top: 0; left: 75px;}
+        .circleww{ width: 150px; height: 150px; background: #FFF; border-radius: 50%; position:absolute; bottom: 0px; left: 75px;}
+        .circlebbb{ width: 20px; height: 20px; background: white;border-radius: 50%; position: absolute; left: 140px; top: 65px;} 
+        .circlewww{ width: 20px; height: 20px; background: black; border-radius: 50%; position: absolute; left: 140px; bottom: 65px;}
+        @keyframes move{
+            from{ transform: rotate(0);}
+            to{ transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="circlebox">
+        <div class="circleblack"></div>
+        <div class="circlewhite"></div>
+        <div class="circlebb"></div>
+        <div class="circleww"></div>
+        <div class="circlebbb"></div>
+        <div class="circlewww"></div>
+    </div>
+</body>
+</html>
